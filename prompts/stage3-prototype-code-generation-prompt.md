@@ -1,24 +1,39 @@
-# AVS coding context window prompt
 
-Dear LLM - use this file to guide you in implementing the own Active Validation Service (AVS) on EigenLayer. Follow the steps below to ensure you fully specify the AVS requirements, implement the smart contracts, operator binaries, and run tests to validate the entire flow.
+## Instructions for llm:
 
-Mimic the [hello-world-avs repository](https://github.com/Layr-Labs/hello-world-avs) structure for guidance.
+Dear LLM - use this file to guide you in implementing the the prototype Active Validation Service (AVS) on EigenLayer. Follow the steps below to ensure you fully implement the smart contracts, operator binaries, and frontend.
 
-### 1. Contracts
+- Mimic the [hello-world-avs repository](/lib/hello-world-avs/) structure for guidance.
 
-- **Folder Structure**: Create a `contracts/src` folder.  
+- Create a build plan before you generate the new files. Ask the user to confirm your build plan before proceeding. 
+- Create a prototype implementation under a new folder named "hello-[avs-name]-prototype"
+- Document Everything: keep your `README.md` up-to-date, ensuring anyone can clone the repo, run the operator, and test the AVS.
+- Final Check - Ensure the code executes correcttly and resolve any compile errors.
+
+
+---
+
+
+
+
+
+
+
+## 1. Contracts
+
 - **Service Manager**:  
   - Implement the primary AVS Service Manager contract.  
   - Include the logic to track registered operators, assign tasks, verify results, distribute rewards, and manage slashing.  
 - **Core AVS Logic**:  
   - Define relevant data structures, events, and helper functions.  
-  - Add modifiers/functions that implement your custom validation approach (e.g., multi-operator voting, challenge periods, or multi-step dispute processes).  
+  - Add modifiers/functions that implement your custom validation approach. 
 - **Rewards & Slashing**:  
-  - Implement functions that handle reward distribution, operator ejections, and slashing conditions.
+  - Implement functions that handle reward distribution.
 
-### 2. Operator
+## 2. Operator
 
-- **Folder Structure**: Create an `/operator` folder.  
+All Operator code should be written in TypeScript.
+- **Folder Structure**: Create an `/operator` folder. 
 - **Operator Binary**:  
   - A reference implementation showing how an operator listens for new tasks, processes them, and returns results.  
   - Include any necessary libraries or frameworks for your computation (e.g., cryptographic libraries).  
@@ -28,22 +43,7 @@ Mimic the [hello-world-avs repository](https://github.com/Layr-Labs/hello-world-
   3. **Compute**: Perform the required computation or verification.  
   4. **Result Submission**: Post results on-chain (or via a designated off-chain aggregator that eventually writes on-chain).  
 
-### 3. Tests
-
-- **Folder Structure**: Create a `test` folder.  
-- **Unit Tests**:  
-  - Write tests for each component of the contract logic (registration, task assignment, validations, reward distribution, slashing).  
-- **Integration Tests**:  
-  - Simulate the entire AVS flow:  
-    1. Deploy and initialize the contracts.  
-    2. Register multiple operators.  
-    3. Trigger a sample task.  
-    4. Submit valid results from an operator.  
-    5. Confirm reward payout.  
-    6. Submit invalid results from another operator.  
-    7. Confirm detection and slashing.  
-
-### 4. README
+## 3. README
 
 Include a `README.md` file at the root of your repository with:
 
@@ -56,44 +56,39 @@ Include a `README.md` file at the root of your repository with:
    - How to run unit tests for the contracts.  
    - How to simulate end-to-end interaction with the AVS.  
 
+
+## 4. Front End
+
+Generate a simple front end in React that allows users to generate Tasks and observe events on chain when they are completed.
+
 ---
 
-## Example Directory Tree
+## Example Prototype Directory Tree
 
 Below is a basic layout for your repository:
 
-my-avs/
+my-avs-prototype/
 ├── contracts/
+│   └── leverage the existing contracts folder from Hello World where possible.
 │   └── src/
-│       ├── My-AVS-ServiceManager.sol
+│       ├── Create a custom service manager for this AVS with naming pattern [AVSName]ServiceManager.sol
 │       ├── RewardDistributor.sol
 │       └── ...
 ├── operator/
 │   ├── main.go (or main.ts, main.py, etc.)
 │   └── ...
-├── test/
-│   ├── test_service.js
+├── frontend/
+│   ├── include the react web app here.
 │   └── ...
 ├── README.md
-└── package.json (or Cargo.toml, go.mod, etc.)
+└── package.json
 
 
 
 
----
 
-# Usage
 
-2. **Implement Contracts**: Write and deploy the necessary solidity (or other smart contract language) files under `contracts/src`.  
-3. **Develop Operator Code**: Implement an operator binary that can request, compute, and submit your AVS tasks.  
-4. **Write Tests**: Create tests that cover normal and malicious scenarios.  
-5. **Document Everything**: Keep your `README.md` up-to-date, ensuring anyone can clone the repo, run the operator, and test the AVS.
-
----
-
-**Final Check**  
-- Ensure all roles and flows are covered (operators, watchers, end-users).  
-- Confirm that your decentralized validation rules are well-defined and robust.  
-- Make sure reward and slashing logic is clear, transparent, and fair.
-
-Use this prompt as a comprehensive reference whenever you build or modify the AVS. This ensures all crucial aspects of your decentralized service—design, implementation, validation, and testing—are addressed thoroughly.
+## LLM References: Pull from the following files to help your work:
+context/repomix-output-eigenlayer-docs.md
+context/repomix-output-eigenlayer-middleware-docs.md
+context/repomix-output-eigenlayer-contracts-docs.md

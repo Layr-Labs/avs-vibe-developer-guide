@@ -33,7 +33,7 @@ This stage takes a refined "idea prompt" and generates an AVS Design from it.
 
 ## Stage 3 Design Generation
 
-This stage takes a refined "Design Tech Spec" and generates an a functional Hello World AVS from it.
+This stage takes a refined "Design Tech Spec" and generates an a functional modified https://github.com/Layr-Labs/hello-world-avs prototype from it.
 
 
 # Testing

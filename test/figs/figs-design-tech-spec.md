@@ -1,6 +1,10 @@
 # FIGS Design Technical Specification
 
-![FIGS Logo](https://i.imgur.com/XNPBqcu.png)
+```
+  /\_/\  
+ ( o.o ) FIGS - Feline Image Generation Service
+  > ^ <  
+```
 
 ## 1. AVS Purpose and Scope
 

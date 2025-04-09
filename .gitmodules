@@ -1,0 +1,3 @@
+[submodule "lib/hello-world-avs"]
+	path = lib/hello-world-avs
+	url = https://github.com/Layr-Labs/hello-world-avs
