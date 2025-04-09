@@ -32,7 +32,7 @@ This stage is focused on taking your high level idea for building an AVS and tur
 Steps to refine your idea:
 
 1. Open a new terminal session.  
-2. `git clone` a local copy of the [avs-prompt-library](https://github.com/Layr-Labs/avs-prompt-library/blob/master/README.md) github repo and `cd` into the newly created folder.  
+2. `git clone` a local copy of this repo and `cd` into the newly created `avs-vibe-developer-guide` folder.  
 3. Run the `claude` command to enter the Claude Code console. Run `init` command to initialize the repository for Claude Code.  
 4. Send the following prompt to Claude Code terminal to refine your idea and include any detail you wish to provide about your AVS.
 
