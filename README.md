@@ -17,15 +17,6 @@ The `/context` folder includes a collection of content that is helpful to add se
 
 This stage takes a high level AVS idea, validates whether it is a good fit to be built as an AVS and outputs the idea as a refined "idea prompt". 
 
-An example refined idea prompt may include the following:
-1. Project Overview: what is the name of _your project_ and what value does it provide for its users?
-2. AVS Purpose: what benefit does the AVS provide to securing, validating or decentralizing _your project_.
-3. Name: what do you want to name your AVS? Or do you want the LLM to name it for you 😉?
-4. Operator Work: which core work or task will the Operators that comprise your AVS do?
-5. Validation: The work is validated through [todo - insert a description of your validation logic at a high level]
-6. Rewards: send Rewards distributions to Operators based on [todo]
-
-
 ## Stage 2 Design Generation
 
 This stage takes a refined "idea prompt" and generates an AVS Design from it.

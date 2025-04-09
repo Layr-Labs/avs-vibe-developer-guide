@@ -2,7 +2,7 @@
 
 # Stage 1: Idea Refinement
 
-## Example Refined Idea Prompt
+## Example Prompt
 
 
 Help me generate a refined idea prompt for my AVS idea using [prompts/stage1-idea-refinement-prompt.md] for guidance. 
@@ -20,10 +20,21 @@ See: test/figs/figs-refined-idea-prompt.md
 
 # Stage 2: Idea Refinement
 
-## Example Design Prompt
+## Example Prompt
 
-Help me generate a design tech spec for my using the attached figs-refined-idea-prompt.md and prompts/stage2-design-generation-prompt.md for guidance. 
+Help me generate a design tech spec for my AVS using the attached figs-refined-idea-prompt.md and prompts/stage2-design-generation-prompt.md for guidance. 
 
-## Output from Claude Code
+## Output from Claude Code (PASSING)
 
 Note: this took about 5 mins for Claude Code to execute. It was not quick, but the results were good.
+
+
+# Stage 3: Prototype Generation
+
+
+## Example Prompt
+
+Help me generate a prototype implementation for my AVS using the attached figs-design-tech-spec.md file and prompts/stage3-prototype-code-generation-prompt.md file for guidance. 
+
+
+## Output from Claude Code

@@ -5,10 +5,12 @@ Dear LLM - use this file to guide you in implementing the the prototype Active V
 
 - Mimic the [hello-world-avs repository](/lib/hello-world-avs/) structure for guidance.
 
-- Create a build plan before you generate the new files. Ask the user to confirm your build plan before proceeding. 
+- Create a build plan before you generate the new files. 
+- Ask the user to confirm your build plan before proceeding. 
 - Create a prototype implementation under a new folder named "hello-[avs-name]-prototype"
 - Document Everything: keep your `README.md` up-to-date, ensuring anyone can clone the repo, run the operator, and test the AVS.
 - Final Check - Ensure the code executes correcttly and resolve any compile errors.
+- Do not generate code for Slashing for now.
 
 
 ---
@@ -23,12 +25,11 @@ Dear LLM - use this file to guide you in implementing the the prototype Active V
 
 - **Service Manager**:  
   - Implement the primary AVS Service Manager contract.  
-  - Include the logic to track registered operators, assign tasks, verify results, distribute rewards, and manage slashing.  
+  - Include the logic to track registered operators, assign tasks, verify results.
 - **Core AVS Logic**:  
   - Define relevant data structures, events, and helper functions.  
   - Add modifiers/functions that implement your custom validation approach. 
-- **Rewards & Slashing**:  
-  - Implement functions that handle reward distribution.
+
 
 ## 2. Operator
 
@@ -92,3 +93,5 @@ my-avs-prototype/
 context/repomix-output-eigenlayer-docs.md
 context/repomix-output-eigenlayer-middleware-docs.md
 context/repomix-output-eigenlayer-contracts-docs.md
+context/repomix-output-eigenlayer-contracts-src.md
+context/repomix-output-eigenlayer-middleware-src.md

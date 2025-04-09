@@ -137,22 +137,6 @@ This AVS adds value through:
 - Validators consistently providing outlier ratings (>10 instances in a 30-day period) are ejected from the validator set
 - Operators failing to maintain minimum hardware requirements are temporarily suspended until compliance is demonstrated
 
-#### Slashing
-- **Moderate Violations**: 
-  - Consistent quality failures: 5% of staked amount
-  - Repeated missed deadlines: 2% of staked amount
-  - Incomplete submissions: 1% of staked amount
-
-- **Severe Violations**:
-  - Generating or approving explicitly inappropriate content: 20% of staked amount
-  - Proven collusion among validators: 15% of staked amount
-  - Plagiarism or copyright infringement: 10% of staked amount
-
-- **Critical Violations**:
-  - Running malicious code: 50% of staked amount
-  - Identity spoofing: 30% of staked amount
-  - Deliberate system attacks: Up to 100% of staked amount
-
 ---
 
 ## Appendix: Technical Implementation Diagram
@@ -199,8 +183,7 @@ flowchart TD
         O1 --> P[Reputation Update]
         O2 --> P
         
-        P --> Q[Slashing Check]
-        Q -->|Violation| R[Apply Penalties]
+
     end
     
     subgraph Results["Result Delivery"]

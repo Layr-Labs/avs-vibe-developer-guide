@@ -39,3 +39,4 @@ out/
 .cache/
 .tmp/
 *.log
+/hello*
