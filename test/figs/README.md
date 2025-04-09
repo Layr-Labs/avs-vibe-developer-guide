@@ -1,4 +1,3 @@
-# FIGS: Feline Image Generation Service
 
 # Stage 1: Idea Refinement
 

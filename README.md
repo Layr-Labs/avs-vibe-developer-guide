@@ -6,6 +6,7 @@
 
 # AVS Idea to Design to Prototype Vibe Development Guide
 
+## Overview 
 **Why**: this guide is meant to enable the user to go from a raw AVS Idea to Design to Prototype (Code) in under 10 mins and learn more about how EigenLayer works along the way.
 
 **Who**: this guide is written to serve a more technical developer audience that prefers [Vibe Coding](https://x.com/karpathy/status/1886192184808149383?lang=en) with popular AI / LLM tools such as [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview). Please note that EigenLayer is also working to release a web app experience to enable the same Idea to Prototype flow which will be released independently.
@@ -22,6 +23,7 @@
 - For these tools, please limit your idea and designs to focus on the scope of **one [Operator Set](https://docs.eigenlayer.xyz/eigenlayer/concepts/operator-sets/operator-sets-concept)** at at time.
 - The files under the `context` folder will soon be replaced with an MCP server.
 
+# Instructions
 
 ## Stage 1: Idea Refinement
 
@@ -78,6 +80,8 @@ Help me generate a prototype implementation for my AVS using the attached [my-av
 3. The LLM will respond with a prototype built in the "hello-[avs name]-world" folder for your review.
 
 
+# Appendix
+
 ## Repo Overview
 
 The `/prompts` folder includes refined prompts to guide the LLM at each stage in content generation for [AVS](https://docs.eigenlayer.xyz/developers/Concepts/avs-developer-guide) idea, design and prototype (code) generation. 
@@ -97,6 +101,6 @@ In order to continuously improve the AVS prompts in this repository, we will con
 5. Add Slashing after it has been launched and fully integrated with eigenlayer-middleware/ECDSAServiceManager and hello-world-avs.
 
 
-## Appendix
+## Inspiration
 
 Inspired by [community support for Claude Code](https://x.com/dabit3/status/1909246687329087550) and [these experiments](https://github.com/wesfloyd/avs-context-prompt?tab=readme-ov-file#eigenlayer-avs-idea-to-prototype-pipeline).
