@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Structure
 - This is a prompt library for EigenLayer AVS (Actively Validated Services) development
 - Contains prompt templates for idea refinement, design generation, and prototype implementation
-- Benchmarks folder contains example AVS ideas and implementations
+- Test folder contains example AVS ideas and implementations
 
 ## Commands
 - No build/lint/test commands available as this is primarily a documentation repository

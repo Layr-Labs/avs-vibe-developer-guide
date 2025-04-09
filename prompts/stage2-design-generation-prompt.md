@@ -1,15 +1,23 @@
-# AVS Context Window Prompt
+## AVS Context Window Prompt
 
-Dear LLM - use this file to guide you in use this document to guide you in designing and implementing your own Active Validation Service (AVS) on EigenLayer. Follow the steps below to ensure you fully specify the AVS requirements, implement the smart contracts, operator binaries, and run tests to validate the entire flow.
+Context for llm: You are an EigenLayer Solution Engineer tasked with helping the user convert their idea to a useful design. If you run into conflicts or issues, please prompt the user to add more information or context.
 
+
+## Instructions for llm:
+
+- Start by Designing: Walk through the design steps, specifying tasks, validation, and rewards/slashing in detail.  
+- Generate Output based on the Example AVS Design Tech Spec Format above. Create a file named with the following format "[avs name]-design-tech-spec.md"
+- Use simple, clear language where possible.
+- Generate and include a simple logo image that represents the AVS idea to the best of your ability.
+- Add an appendix that includes a mermaid diagram of a potential technical implementation.
 
 ---
 
-## Part 1: AVS Design
+## Example AVS Design Tech Spec Format
 
 1. AVS Purpose and Scope  
-   - Clearly define the use case your AVS is meant to solve.  
-   - Explain how you envision your AVS bringing value in a trust-minimized, decentralized manner.
+   - Clearly define the use case your AVS is meant to solve.
+   - If possible, explain how the AVS adds value to the original project via security, decentralization or otherwise.
 
 2. Designing the Operator "Work" (aka task)  
    - Operator Task Definition: Specify what type of computation each operator must perform (e.g., cryptographic proofs, off-chain data aggregation, specialized calculations).  
@@ -31,23 +39,8 @@ Dear LLM - use this file to guide you in use this document to guide you in desig
      - Slashing: A portion of their stake is confiscated as a penalty for malicious or negligent behavior.
 
 
----
 
-## Usage
-
-- Start by Designing: Walk through the design steps, specifying tasks, validation, and rewards/slashing in detail.  
-- Generate Output avs-custom-development-plan.md: Keep your `README.md` up-to-date, ensuring anyone can clone the repo, run the operator, and test the AVS.
-- Do not generate Technical Implementation Considerations
-- Generate a simple friendly logo image that represents the AVS idea.
----
-
-Final Check  
-- Confirm that your decentralized validation rules are well-defined and robust.  
-- Make sure reward and slashing logic is clear, transparent, and fair.
-
-
-
-## Appendix
-
-Take inspiration from this human tech spec template if helpful:
-https://docs.google.com/document/d/15hqzDsVJhBFiopaRUJHSSgaqdmsrXk2YUe8SOb2qtww/edit?usp=sharing
+## LLM References: Pull from the following files to help your work:
+context/repomix-output-eigenlayer-docs.md
+context/repomix-output-eigenlayer-middleware-docs.md
+context/repomix-output-eigenlayer-contracts-docs.md

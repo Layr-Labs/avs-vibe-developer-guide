@@ -11,6 +11,7 @@ The `/prompts` folder includes refined prompts to guide the LLM at each stage in
 
 The `/context` folder includes a collection of content that is helpful to add selective context to the LLM. These assets serve as a simple mechanism to enrich the LLM context window with the right information for a given prompt. These are a simpler, low-tech alternative to integrating an MCP server (which we will probably also build at a later stage).
 
+**Note:** Claude Code currently has a limit of 256KB per file. Each file in the context folder is broken down intentionally to help address this limitation.
 
 ## Stage 1 Idea Refinement
 
@@ -32,16 +33,19 @@ This stage takes a refined "idea prompt" and generates an AVS Design from it.
 
 ## Stage 3 Design Generation
 
+This stage takes a refined "Design Tech Spec" and generates an a functional Hello World AVS from it.
 
 
-# Benchmarks
+# Testing
 
-In order to continuously improve the AVS prompts in this repository, we will continue to add new example AVSs in the [benchmarks](/benchmarks/) folder. We will regenerate these AVSs from Idea to Design to Prototype to measure our improvements of the prompts at each stage.
+In order to continuously improve the AVS prompts in this repository, we will continue to add new example AVSs in the [test](/test/) folder. We will regenerate these AVSs from Idea to Design to Prototype to measure our improvements of the prompts at each stage.
+
+
 
 
 # Roadmap
 
-- Continuously ennhance our default prompts for each stage. The initial prompts are
+- Continuously enhance our default prompts for each stage. The initial prompts are minimally viable and can easily be improved with more time and iteration.
 - Add Slashing after it has been launched and fully integrated with eigenlayer-middleware/ECDSAServiceManager and hello-world-avs.
 
 
