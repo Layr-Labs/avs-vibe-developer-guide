@@ -1,4 +1,4 @@
-<img src="assets/avs prompt library logo3.jpg" width="400" />
+<img src="assets/avs-prompt-library-logo.jpg" width="400" />
 
 # AVS Prompt Library
 Purpose: Library of prompts to feed your LLM through stages of [AVS](https://docs.eigenlayer.xyz/developers/Concepts/avs-developer-guide) idea, design and prototype (code) generation. For these tools, please limit your idea and designs to focus on the scope of **one [Operator Set](https://docs.eigenlayer.xyz/eigenlayer/concepts/operator-sets/operator-sets-concept)** at at time.
