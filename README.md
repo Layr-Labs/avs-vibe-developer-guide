@@ -2,9 +2,9 @@
 <img src="assets/avs-vibe-development-guide.png" width="300" />
 </div>
 
-For these tools, please limit your idea and designs to focus on the scope of **one [Operator Set](https://docs.eigenlayer.xyz/eigenlayer/concepts/operator-sets/operator-sets-concept)** at at time.
 
-AVS Idea to Design to Prototype Vibe Development Guide
+
+# AVS Idea to Design to Prototype Vibe Development Guide
 
 **Why**: this guide is meant to enable the user to go from a raw AVS Idea to Design to Prototype (Code) in under 10 mins and learn more about how EigenLayer works along the way.
 
@@ -19,7 +19,9 @@ AVS Idea to Design to Prototype Vibe Development Guide
 **Caveats:**
 - Including Claude Code and Hello-World-AVS in order to deliver a useful MVP
 - Excluding Slashing functionality until the AVS Eng team is able to add this functionality to the eigenlayer-middleware / ECDSAServiceManager repo dependency for Hello World.
+- For these tools, please limit your idea and designs to focus on the scope of **one [Operator Set](https://docs.eigenlayer.xyz/eigenlayer/concepts/operator-sets/operator-sets-concept)** at at time.
 - The files under the `context` folder will soon be replaced with an MCP server.
+
 
 ## Stage 1: Idea Refinement
 
@@ -75,13 +77,6 @@ Help me generate a prototype implementation for my AVS using the attached [my-av
 
 3. The LLM will respond with a prototype built in the "hello-[avs name]-world" folder for your review.
 
-## Roadmap
-
-1. Enhance our default prompts for each stage. The initial prompts are minimally viable and can easily be improved with more time and iteration.  
-2. Design: add automated logo generation and architecture design to the design generation step.  
-3. The Prototype code generation phase is focused on [hello-world-avs](https://github.com/Layr-Labs/hello-world-avs) as the target codebase. We will expand this to other examples and partner platforms in the future.  
-4. Add a standard front end to the hello-world-avs repo to enable better demo'ing of the solution (pull from [this example](https://x.com/weswfloyd/status/1908267994033353206)).
-5. Add Slashing after it has been launched and fully integrated with eigenlayer-middleware/ECDSAServiceManager and hello-world-avs.
 
 ## Repo Overview
 
@@ -92,6 +87,15 @@ The `/context` folder includes a collection of content that is helpful to add se
 ## Testing
 
 In order to continuously improve the AVS prompts in this repository, we will continue to add new example AVSs in the [test](/test/) folder. We will regenerate these AVSs from Idea to Design to Prototype to measure our improvements of the prompts at each stage.
+
+## Roadmap
+
+1. Enhance our default prompts for each stage. The initial prompts are minimally viable and can easily be improved with more time and iteration.  
+2. Design: add automated logo generation and architecture design to the design generation step.  
+3. The Prototype code generation phase is focused on [hello-world-avs](https://github.com/Layr-Labs/hello-world-avs) as the target codebase. We will expand this to other examples and partner platforms in the future.  
+4. Add a standard front end to the hello-world-avs repo to enable better demo'ing of the solution (pull from [this example](https://x.com/weswfloyd/status/1908267994033353206)).
+5. Add Slashing after it has been launched and fully integrated with eigenlayer-middleware/ECDSAServiceManager and hello-world-avs.
+
 
 ## Appendix
 
