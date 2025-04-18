@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/avs-vibe-development-guide.png" width="300" />
+<img src="public/images/avs-vibe-development-guide.png" width="300" />
 </div>
 
 

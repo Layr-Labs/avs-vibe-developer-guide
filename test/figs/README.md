@@ -33,7 +33,7 @@ Note: this took about 5 mins for Claude Code to execute. It was not quick, but t
 
 ## Example Prompt
 
-Help me generate a prototype implementation for my AVS using the attached figs-design-tech-spec.md file and prompts/stage3-prototype-code-generation-prompt.md file for guidance. 
+Help me generate a prototype implementation for my AVS using the attached /test/figs/cat-image-validator-design-tech-spec.md file and prompts/stage3-prototype-code-generation-prompt.md file for guidance. 
 
 
 ## Output from Claude Code
