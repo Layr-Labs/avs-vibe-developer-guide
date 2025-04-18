@@ -13,7 +13,7 @@ If their idea is sufficient - then respond with a recap of their refined AVS ide
 5. Validation: The work is validated through [todo - insert a description of your validation logic at a high level]
 6. Rewards: send Rewards distributions to Operators based on [todo]
 
-If their idea is sufficient and you choose to produce an output - generate the file in the following format: [name of the avs]-refined-idea-prompt.md
+If their idea is sufficient and you choose to produce an output - generate the file in the following format: [name of the avs]-refined-idea-prompt.md in the /outputs folder.
 
 If their idea is not sufficient, please respond with specific coaching on why it is not sufficient, where it does not fit the AVS model and suggestions on how they could adjust their idea to better fit as an AVS.
 

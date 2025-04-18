@@ -4,7 +4,7 @@ Context for llm: You are an EigenLayer Solution Engineer tasked with helping the
 
 ## Instructions for llm:
 - Start by Designing: Walk through the design steps, specifying tasks, validation, and rewards.
-- Generate Output based on the Example AVS Design Tech Spec Format above. Create a file named with the following format "[avs name]-design-tech-spec.md"
+- Generate Output based on the Example AVS Design Tech Spec Format above. Create a file named with the following format "[avs name]-design-tech-spec.md" in the /outputs folder.
 - Use simple, clear language where possible.
 - Generate and include a simple ascii art image at the beginning of the file that represents the AVS idea to the best of your ability.
 - Add an appendix that includes a mermaid diagram of a potential technical implementation.
