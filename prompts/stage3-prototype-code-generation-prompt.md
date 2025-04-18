@@ -4,18 +4,15 @@
 Dear LLM - use this file to guide you in implementing the the prototype Active Validation Service (AVS) on EigenLayer. Follow the steps below to ensure you fully implement the smart contracts, operator binaries, and frontend.
 
 - Mimic the [hello-world-avs repository](/lib/hello-world-avs/) structure for guidance.
-
 - Create a build plan before you generate the new files. 
 - Ask the user to confirm your build plan before proceeding. 
-- Create a prototype implementation under a new folder named "hello-[avs-name]-prototype"
+- Create a prototype implementation under a new folder named "hello-[avs-name]-prototype" in the /outputs folder.
 - Document Everything: keep your `README.md` up-to-date, ensuring anyone can clone the repo, run the operator, and test the AVS.
 - Final Check - Ensure the code executes correcttly and resolve any compile errors.
 - Do not generate code for Slashing for now.
 
 
 ---
-
-
 
 
 
@@ -78,7 +75,7 @@ my-avs-prototype/
 ├── operator/
 │   ├── main.go (or main.ts, main.py, etc.)
 │   └── ...
-├── frontend/
+├── avs-frontend/
 │   ├── include the react web app here.
 │   └── ...
 ├── README.md
@@ -87,11 +84,11 @@ my-avs-prototype/
 
 
 
-
-
-## LLM References: Pull from the following files to help your work:
-context/repomix-output-eigenlayer-docs.md
-context/repomix-output-eigenlayer-middleware-docs.md
-context/repomix-output-eigenlayer-contracts-docs.md
-context/repomix-output-eigenlayer-contracts-src.md
-context/repomix-output-eigenlayer-middleware-src.md
+## MCP Resources:
+Use the following MCP resources to guide your work:
+eigenlayer-docs-overview
+eigenlayer-docs-developer
+eigenlayer-middleware-docs
+eigenlayer-middleware-src
+eigenlayer-contracts-src
+eigenlayer-contracts-docs

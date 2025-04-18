@@ -21,7 +21,7 @@ See: test/figs/figs-refined-idea-prompt.md
 
 ## Example Prompt
 
-Help me generate a design tech spec for my AVS using the attached figs-refined-idea-prompt.md and prompts/stage2-design-generation-prompt.md for guidance. 
+Help me generate a design tech spec for my AVS using the previously generated cat-image-validator-refined-idea-prompt.md and prompts/stage2-design-generation-prompt.md for guidance. 
 
 ## Output from Claude Code (PASSING)
 
