@@ -25,17 +25,20 @@
 
 # Instructions
 
+## Stage 0: Environment Setup
+
+- Open a new terminal session.
+- `git clone` a local copy of this repo and `cd` into the newly created `avs-vibe-developer-guide` folder.  
+- Run the following command to add the EigenLayer MCP Server to your local `claude` instance:
+   ```claude mcp add --transport sse eigenlayer-mcp-server https://eigenlayer-mcp-server-sand.vercel.app/sse``` 
+- Run `claude` command to enter the Claude Code console.
+- Run `init` command to initialize the repository for Claude Code. 
+
 ## Stage 1: Idea Refinement
 
-This stage is focused on taking your high level idea for building an AVS and turning it into a refined idea prompt. This will help reaffirm that your idea can be practically built as an AVS and result in a prompt that will be easy for the LLM to convert into a full AVS Design tech spec.
+This stage is focused on taking your high level idea for building an AVS and turning it into a refined idea prompt. This will help reaffirm that your idea can be practically built as an AVS and result in a prompt that will be easy for the LLM to convert into a full AVS Design tech spec.  
 
-Steps to refine your idea:
-
-1. Open a new terminal session.  
-2. `git clone` a local copy of this repo and `cd` into the newly created `avs-vibe-developer-guide` folder.  
-3. Run the `claude` command to enter the Claude Code console. Run `init` command to initialize the repository for Claude Code.  
-4. Send the following prompt to Claude Code terminal to refine your idea and include any detail you wish to provide about your AVS.
-
+In your Claude Code terminal session, send the following prompt:
 ```markdown
 Help me generate a refined idea prompt for my AVS idea using the attached prompts/stage1-idea-refinement-prompt.md file for guidance.
 
@@ -43,23 +46,18 @@ My idea for an AVS is: [insert your idea here].
 ```
 
 Please note that you may also add any AVS design detail you may already have in mind, including the following context to your prompt:
-
-* Project Overview: what is the name of your project and what value does it provide for its users?  
-* AVS Purpose: what benefit does the AVS provide to securing, validating or decentralizing your project.  
-* Name: what do you want to name your AVS? Or do you want the LLM to name it for you 😉?  
-* Operator Work: which core work or task will the Operators that comprise your AVS do?  
-* Validation: The work is validated through [todo - insert a description of your validation logic at a high level]  
-* Rewards: send Rewards distributions to Operators based on [todo]
+    * Project Overview: what is the name of your project and what value does it provide for its users?  
+    * AVS Purpose: what benefit does the AVS provide to securing, validating or decentralizing your project.  
+    * Name: what do you want to name your AVS? Or do you want the LLM to name it for you 😉?  
+    * Operator Work: which core work or task will the Operators that comprise your AVS do?  
+    * Validation: The work is validated through [todo - insert a description of your validation logic at a high level]  
+    * Rewards: send Rewards distributions to Operators based on [todo]
 
 5. The LLM will respond with either feedback on how to improve your AVS idea or a "[avs-name]-refined-idea-prompt.md" for your review.
 
 ## Stage 2: Design (Tech Spec) Generation
 
-Steps to generate your Design Tech Spec:
-
-1. Go to your open `claude` terminal session.  
-2. Send the following prompt to Claude Code terminal:
-
+In your Claude Code terminal session, send the following prompt:
 ```markdown
 Help me generate a design tech spec for my using the attached [myavs-refined-idea-prompt.md] file and prompts/stage2-design-generation-prompt.md file for guidance.
 ```
@@ -68,11 +66,7 @@ Help me generate a design tech spec for my using the attached [myavs-refined-ide
 
 ## Stage 3: Prototype (Code) Generation
 
-Steps to generate your prototype AVS code:
-
-1. Go to your open `claude` terminal session.  
-2. Send the following prompt to Claude Code terminal:
-
+In your Claude Code terminal session, send the following prompt:
 ```markdown
 Help me generate a prototype implementation for my AVS using the attached [my-avs]-design-tech-spec.md file and prompts/stage3-prototype-code-generation-prompt.md file for guidance.
 ```
