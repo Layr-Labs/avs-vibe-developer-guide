@@ -19,8 +19,6 @@ Dear LLM - use this file to guide you in implementing the the prototype Active V
 
 
 
-
-
 ## 1. Contracts
 
 - **Service Manager**:  
@@ -78,7 +76,7 @@ my-avs-prototype/
 ├── operator/
 │   ├── main.go (or main.ts, main.py, etc.)
 │   └── ...
-├── frontend/
+├── avs-frontend/
 │   ├── include the react web app here.
 │   └── ...
 ├── README.md
@@ -87,11 +85,11 @@ my-avs-prototype/
 
 
 
-
-
-## LLM References: Pull from the following files to help your work:
-context/repomix-output-eigenlayer-docs.md
-context/repomix-output-eigenlayer-middleware-docs.md
-context/repomix-output-eigenlayer-contracts-docs.md
-context/repomix-output-eigenlayer-contracts-src.md
-context/repomix-output-eigenlayer-middleware-src.md
+## MCP Resources:
+Use the following MCP resources to guide your work:
+eigenlayer-docs-overview
+eigenlayer-docs-developer
+eigenlayer-middleware-docs
+eigenlayer-middleware-src
+eigenlayer-contracts-src
+eigenlayer-contracts-docs

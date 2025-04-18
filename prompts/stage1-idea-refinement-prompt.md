@@ -19,8 +19,8 @@ If their idea is not sufficient, please respond with specific coaching on why it
 
 
 
-## LLM References:
-Pull from the following files to help your work:
-context/repomix-output-eigenlayer-docs.md
-context/repomix-output-eigenlayer-middleware-docs.md
-
+## MCP Resources:
+Use the following MCP resources to guide your work:
+eigenlayer-docs-overview
+eigenlayer-docs-developer
+eigenlayer-middleware-docs
