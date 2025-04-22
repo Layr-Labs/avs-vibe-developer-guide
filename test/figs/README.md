@@ -17,7 +17,7 @@ Rewards: validating operators get rewarded if they respond with any accuracy rat
 See: test/figs/figs-refined-idea-prompt.md
 
 
-# Stage 2: Idea Refinement
+# Stage 2: Design Tech Spec Generation
 
 ## Example Prompt
 
